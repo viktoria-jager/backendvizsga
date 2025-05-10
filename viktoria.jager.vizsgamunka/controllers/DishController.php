@@ -4,7 +4,7 @@ class DishController
 {
     public static function list()
     {
-        $dishes = DishModel::get();
+        $dishes = DishModel::getAll();
         $dishTypes = DishTypeModel::getAll();
         require "views/admin-food.html";
     }
